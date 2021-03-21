@@ -1,0 +1,107 @@
+$theme-colors: (
+  "primary": #ff007a,
+  "secondary": #673de6,
+  "danger": #673de6,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.app-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+input:disabled {
+  color: black;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.menu-btn {
+  transition: all 0.2s;
+}
+
+.menu-btn:hover {
+  background-color: #5731c9;
+}
+
+.bg-primary-500 {
+  background-color: #421cb4 !important;
+}
+
+.bg-gray-400 {
+  background-color: #eef0f5 !important;
+}
+.bg-gray-300 {
+  background-color: #f2f3f7 !important;
+}
+
+.transition {
+  transition: all 0.2s;
+}
+
+.chart-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.chart-btn {
+  background-color: #ebecf3;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 80px;
+  text-align: center;
+  padding: 4px 0px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.chart-btn:hover {
+  background-color: darken($color: #ebecf3, $amount: 5);
+}
+
+.chart-btn:active {
+  background-color: darken($color: #ebecf3, $amount: 15);
+}
+
+[class^="MuiTableCell-root"] {
+  border: none !important;
+}
+
+.skrolbaras ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  height: 7px;
+}
+
+.skrolbaras > div > div::-webkit-scrollbar-thumb {
+  border: 2px solid #dedfe7 !important;
+  border-radius: 4px;
+  background-color: #dedfe7 !important;
+}
+
+.code {
+  font-family: "Courier Prime", monospace;
+}
